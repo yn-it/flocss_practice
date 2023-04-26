@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- OGPの設定 -->
+  <meta property="og:title" content="FLOCSSの練習">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="FLOCSSを使って架空のサイトを作ってみた">
+  <meta property="og:url" content="https://yn-it.com/flocss_practice/index.html">
+  <meta property="og:site_name" content="FLOCSSの練習">
+  <meta property="og:image" content="https://yn-it.com/flocss_practice/assets/images/screenshot.png">
+
+  <!-- Twitter用のOGPの設定 -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ynit1979">
+
+  <!-- Font Awesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles/css/app.css">
+  <title>FLOCSSの練習</title>
+</head>
+
+<body>
+
+  <!-- Header Section Starts -->
+  <header id="header" class="p-header">
+
+    <div class="l-header">
+
+      <div class="p-header__container">
+
+        <!-- Logo -->
+        <div class="c-logo p-header__logo">
+          <a href="index.html" class="c-logo__link p-header__logo-link">
+            <img src="assets/images/logo.png" alt="Logo" class="c-logo__image p-header__logo-image">
+            <span class="c-logo__title p-header__logo-title">只野練習</span>
+          </a>
+        </div>
+
+        <!-- Navigation -->
+        <nav id="js-toggle-sp-menu-target" class="c-nav p-header__nav">
+          <ul class="c-nav__list p-header__nav-list">
+            <li class="c-nav__item p-header__nav-item">
+              <a href="index.html" class="c-nav__link p-header__nav-link">トップ</a>
+            </li>
+            <li class="c-nav__item p-header__nav-item">
+              <a href="#topics" class="c-nav__link p-header__nav-link">トピックス</a>
+            </li>
+            <li class="c-nav__item p-header__nav-item">
+              <a href="#business-content" class="c-nav__link p-header__nav-link">事業内容</a>
+            </li>
+            <li class="c-nav__item p-header__nav-item">
+              <a href="#case-study" class="c-nav__link p-header__nav-link">事例紹介</a>
+            </li>
+            <li class="c-nav__item p-header__nav-item">
+              <a href="#access" class="c-nav__link p-header__nav-link">アクセス</a>
+            </li>
+            <li class="c-nav__item p-header__nav-item">
+              <a href="#contact" class="c-nav__link p-header__nav-link">お問い合わせ</a>
+            </li>
+          </ul>
+
+        </nav>
+
+        <!-- Hamburger Menu -->
+        <div id="js-toggle-sp-menu" class="c-nav__btn p-header__nav-btn fa-solid fa-bars"></div>
+
+      </div>
+
+    </div>
+
+  </header>
+  <!-- Header Section Ends -->
+
+  <!-- Banner Section Starts -->
+  <div class="c-banner p-top-banner">
+    <p class="c-banner__caption p-top-banner__caption">只野練習のバナー</p>
+  </div>
+  <!-- Banner Section Ends -->
+
+  <!-- Topics Section Starts -->
+  <section id="topics" class="p-topics">
+
+    <div class="u-container">
+
+      <div class="c-title p-topics__title">
+        <h2 class="c-title__main p-topics__title-main">Topics</h2>
+        <h3 class="c-title__sub p-topics__title-sub">トピックス</h3>
+      </div>
+
+      <!-- Topics List -->
+      <div class="p-topics__list-wrapper">
+        <ul class="p-topics__list">
+          <li class="p-topics__item">
+            <date class="p-topics__date">2023.04.16</date>
+            <span class="p-topics__info">今週のトピックスを更新しました</span>
+          </li>
+          <li class="p-topics__item">
+            <date class="p-topics__date">2023.04.12</date>
+            <span class="p-topics__info">最新のトピックスを更新しました</span>
+          </li>
+          <li class="p-topics__item">
+            <date class="p-topics__date">2023.04.09</date>
+            <span class="p-topics__info">ホットな話題を更新しました</span>
+          </li>
+          <li class="p-topics__item">
+            <date class="p-topics__date">2023.04.06</date>
+            <span class="p-topics__info">注目の情報を更新しました</span>
+          </li>
+          <li class="p-topics__item">
+            <date class="p-topics__date">2023.04.02</date>
+            <span class="p-topics__info">おすすめの記事を更新しました</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- Topics Section Ends -->
+
+  <!-- Business Content Section Starts -->
+  <section id="business-content" class="p-business-content">
+
+    <div class="u-container p-business-content__container">
+
+      <div class="c-title p-business-content__title">
+        <h2 class="c-title__main p-business-content__title-main">About Us</h2>
+        <h3 class="c-title__sub p-business-content__title-sub">事業内容</h3>
+      </div>
+
+      <div class="c-row p-business-content__row">
+
+        <div class="c-grid c-grid--4col">
+
+          <!-- Card (4 Columns) -->
+          <div class="c-card c-card--narrow p-business-content__card">
+            <div
+              class="c-card__image-wrapper p-business-content__card-image-wrapper p-business-content__card-image-wrapper--narrow">
+              <img src="assets/images/web_production.jpg" alt="Web Production"
+                class="c-card__image p-business-content__card-image">
+            </div>
+            <div class="c-card__body p-business-content__card-body">
+              <h3 class="c-card__title p-business-content__card-title">Web制作</h3>
+              <p class="c-card__text p-business-content__card-text">
+                最新技術で魅力的なWebサイトを制作します。
+              </p>
+            </div>
+            <div class="p-business-content__btn-wrapper">
+              <a href="#" class="c-btn p-business-content__btn">続きはこちら</a>
+            </div>
+          </div>
+          <div class="c-card c-card--narrow p-business-content__card">
+            <div
+              class="c-card__image-wrapper p-business-content__card-image-wrapper p-business-content__card-image-wrapper--narrow">
+              <img src="assets/images/graphic_design.jpg" alt="Web Production"
+                class="c-card__image p-business-content__card-image">
+            </div>
+            <div class="c-card__body p-business-content__card-body">
+              <h3 class="c-card__title p-business-content__card-title">グラフィックデザイン</h3>
+              <p class="c-card__text p-business-content__card-text">
+                グラフィックデザインは、視覚的なコミュニケーションの手段として、文字やイメージ、色彩などを組み合わせてデザインを行うことです。広告やポスター、ロゴ、パッケージデザインなど、様々な分野で利用され、商品やサービスの魅力を高める役割を果たします。
+              </p>
+            </div>
+            <div class="p-business-content__btn-wrapper">
+              <a href="#" class="c-btn p-business-content__btn">続きはこちら</a>
+            </div>
+          </div>
+          <div class="c-card c-card--narrow p-business-content__card">
+            <div
+              class="c-card__image-wrapper p-business-content__card-image-wrapper p-business-content__card-image-wrapper--narrow">
+              <img src="assets/images/print_production.jpg" alt="Web Production"
+                class="c-card__image p-business-content__card-image">
+            </div>
+            <div class="c-card__body p-business-content__card-body">
+              <h3 class="c-card__title p-business-content__card-title">印刷物制作</h3>
+              <p class="c-card__text p-business-content__card-text">
+                印刷物制作は、チラシ、パンフレット、名刺などのデザイン・印刷を手掛けます。ビジネスで必要不可欠なツールです。
+              </p>
+            </div>
+            <div class="p-business-content__btn-wrapper">
+              <a href="#" class="c-btn p-business-content__btn">続きはこちら</a>
+            </div>
+          </div>
+          <div class="c-card c-card--narrow p-business-content__card">
+            <div
+              class="c-card__image-wrapper p-business-content__card-image-wrapper p-business-content__card-image-wrapper--narrow">
+              <img src="assets/images/web_production.jpg" alt="Web Production"
+                class="c-card__image p-business-content__card-image">
+            </div>
+            <div class="c-card__body p-business-content__card-body">
+              <h3 class="c-card__title p-business-content__card-title">Web制作</h3>
+              <p class="c-card__text p-business-content__card-text">最新技術で魅力的なWebサイトを制作します。</p>
+            </div>
+            <div class="p-business-content__btn-wrapper">
+              <a href="#" class="c-btn p-business-content__btn">続きはこちら</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="c-row p-business-content__row">
+
+        <div class="c-grid c-grid--3col">
+
+          <!-- Card (3 Columns) -->
+          <div class="c-card c-card--base p-business-content__card">
+            <div
+              class="c-card__image-wrapper p-business-content__card-image-wrapper p-business-content__card-image-wrapper--base">
+              <img src="assets/images/print_production.jpg" alt="Web Production"
+                class="c-card__image p-business-content__card-image">
+            </div>
+            <div class="c-card__body p-business-content__card-body">
+              <h3 class="c-card__title p-business-content__card-title">印刷物制作</h3>
+              <p class="c-card__text p-business-content__card-text">
+                印刷物制作は、チラシ、パンフレット、名刺などのデザイン・印刷を手掛けます。ビジネスで必要不可欠なツールです。
+              </p>
+            </div>
+            <div class="p-business-content__btn-wrapper">
+              <a href="#" class="c-btn p-business-content__btn">続きはこちら</a>
+            </div>
+          </div>
+          <div class="c-card c-card--base p-business-content__card">
+            <div
+              class="c-card__image-wrapper p-business-content__card-image-wrapper p-business-content__card-image-wrapper--base">
+              <img src="assets/images/graphic_design.jpg" alt="Graphic Design"
+                class="c-card__image p-business-content__card-image">
+            </div>
+            <div class="c-card__body p-business-content__card-body">
+              <h3 class="c-card__title p-business-content__card-title">グラフィックデザイン</h3>
+              <p class="c-card__text p-business-content__card-text">
+                グラフィックデザインは、視覚的なコミュニケーションの手段として、文字やイメージ、色彩などを組み合わせてデザインを行うことです。広告やポスター、ロゴ、パッケージデザインなど、様々な分野で利用され、商品やサービスの魅力を高める役割を果たします。
+              </p>
+            </div>
+            <div class="p-business-content__btn-wrapper">
+              <a href="#" class="c-btn p-business-content__btn">続きはこちら</a>
+            </div>
+          </div>
+          <div class="c-card c-card--base p-business-content__card">
+            <div
+              class="c-card__image-wrapper p-business-content__card-image-wrapper p-business-content__card-image-wrapper--base">
+              <img src="assets/images/web_production.jpg" alt="Web Production"
+                class="c-card__image p-business-content__card-image">
+            </div>
+            <div class="c-card__body p-business-content__card-body">
+              <h3 class="c-card__title p-business-content__card-title">Web制作</h3>
+              <p class="c-card__text p-business-content__card-text">
+                最新技術で魅力的なWebサイトを制作します。
+              </p>
+            </div>
+            <div class="p-business-content__btn-wrapper">
+              <a href="#" class="c-btn p-business-content__btn">続きはこちら</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="c-row p-business-content__row">
+
+        <div class="c-grid c-grid--2col">
+
+          <!-- Card (2 Columns) -->
+          <div class="c-card c-card--wide p-business-content__card">
+            <div
+              class="c-card__image-wrapper p-business-content__card-image-wrapper p-business-content__card-image-wrapper--wide">
+              <img src="assets/images/web_production.jpg" alt="Web Production"
+                class="c-card__image p-business-content__card-image">
+            </div>
+            <div class="c-card__body p-business-content__card-body">
+              <h3 class="c-card__title p-business-content__card-title">Web制作</h3>
+              <p class="c-card__text p-business-content__card-text">
+                最新技術で魅力的なWebサイトを制作します。
+              </p>
+            </div>
+            <div class="p-business-content__btn-wrapper">
+              <a href="#" class="c-btn p-business-content__btn">続きはこちら</a>
+            </div>
+          </div>
+          <div class="c-card c-card--wide p-business-content__card">
+            <div
+              class="c-card__image-wrapper p-business-content__card-image-wrapper p-business-content__card-image-wrapper--wide">
+              <img src="assets/images/print_production.jpg" alt="Web Production"
+                class="c-card__image p-business-content__card-image">
+            </div>
+            <div class="c-card__body p-business-content__card-body">
+              <h3 class="c-card__title p-business-content__card-title">印刷物制作</h3>
+              <p class="c-card__text p-business-content__card-text">
+                印刷物制作は、チラシ、パンフレット、名刺などのデザイン・印刷を手掛けます。ビジネスで必要不可欠なツールです。
+              </p>
+            </div>
+            <div class="p-business-content__btn-wrapper">
+              <a href="#" class="c-btn p-business-content__btn">続きはこちら</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- Business Content Section Ends -->
+
+  <!-- Case Study Section Starts -->
+  <section id="case-study" class="p-case-study">
+
+    <div class="u-container p-case-study__container">
+
+      <div class="c-title p-case-study__title">
+        <h2 class="c-title__main p-case-study__title-main">Case Studies</h2>
+        <h3 class="c-title__text p-case-study__title-sub">事例紹介</h3>
+      </div>
+
+      <div class="c-row p-case-study__row">
+
+        <div class="c-grid c-grid--2col p-case-study__col">
+
+          <!-- Card (2 Columns) -->
+          <div class="c-card c-card--wide p-case-study__card p-case-study__card--row-reverse-lg">
+            <div class="c-card__body p-case-study__card-body">
+              <h3 class="c-card__title p-case-study__card-title">印刷物制作の事例紹介</h3>
+              <p class="c-card__text p-case-study__card-text">
+                印刷物制作では、チラシ、パンフレット、名刺などの制作を手掛けています。特に、飲食店向けのメニューや販促ツールの制作実績が豊富です。お客様のご要望に合わせたデザインやレイアウトを提案し、高品質な印刷物をお届けします。
+              </p>
+            </div>
+            <div class="c-card__image-wrapper p-case-study__card-image-wrapper">
+              <img src="assets/images/case_study1.jpg" alt="Case Study 1"
+                class="c-card__image p-case-study__card-image">
+            </div>
+          </div>
+          <div class="c-card c-card--wide p-case-study__card">
+            <div class="c-card__body p-case-study__card-body">
+              <h3 class="c-card__title p-case-study__card-title">グラフィックデザインの事例紹介</h3>
+              <p class="c-card__text p-case-study__card-text">
+                ある企業のロゴデザインを手がけました。同社は独自性や技術力を強みとするIT企業でしたが、ブランドイメージが定まっておらず、ロゴデザインから始めることになりました。弊社は同社のイメージや価値観をヒアリングし、それを反映したロゴデザインを提案しました。結果として、お客様にも好評をいただき、新しいブランドイメージの確立に繋がりました。
+              </p>
+            </div>
+            <div class="c-card__image-wrapper p-case-study__card-image-wrapper">
+              <img src="assets/images/case_study2.jpg" alt="Case Study 2"
+                class="c-card__image p-case-study__card-image">
+            </div>
+          </div>
+
+        </div>
+        <div class="c-grid c-grid--2col p-case-study__col">
+
+          <div
+            class="c-card c-card--wide p-case-study__card p-case-study__card--row-reverse p-case-study__card--row-reverse-lg">
+            <div class="c-card__body p-case-study__card-body">
+              <h3 class="c-card__title p-case-study__card-title">Web制作の事例紹介</h3>
+              <p class="c-card__text p-case-study__card-text">
+                当社では、Web制作の実績も多数ございます。企業サイト、ECサイト、LPなど、お客様のご要望に合わせた最適なWebサイトを制作いたします。制作したサイトは、ユーザビリティの向上や集客効果の向上に繋がり、お客様のビジネスの発展に貢献しています。
+              </p>
+            </div>
+            <div class="c-card__image-wrapper p-case-study__card-image-wrapper">
+              <img src="assets/images/case_study3.png" alt="Case Study1" class="c-card__image p-case-study__card-image">
+            </div>
+          </div>
+          <div class="c-card c-card--wide p-case-study__card p-case-study__card--row-reverse">
+            <div class="c-card__body p-case-study__card-body">
+              <h3 class="c-card__title p-case-study__card-title">印刷物制作の事例紹介</h3>
+              <p class="c-card__text p-case-study__card-text">
+                印刷物制作では、チラシ、パンフレット、名刺などの制作を手掛けています。特に、飲食店向けのメニューや販促ツールの制作実績が豊富です。お客様のご要望に合わせたデザインやレイアウトを提案し、高品質な印刷物をお届けします。
+              </p>
+            </div>
+            <div class="c-card__image-wrapper p-case-study__card-image-wrapper">
+              <img src="assets/images/case_study1.jpg" alt="Case Study 1"
+                class="c-card__image p-case-study__card-image">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- Case Study Section Ends -->
+
+  <!-- Access Section Starts -->
+  <section id="access" class="p-access">
+
+    <div class="u-container p-access__container">
+
+      <div class="c-title p-access__title">
+        <h2 class="c-title__main p-access__title-main">Access</h2>
+        <h2 class="c-title__sub p-access__title-sub">アクセス</h2>
+      </div>
+
+      <div class="c-row p-access__row">
+
+        <div class="c-grid c-grid--2col p-access__col">
+
+          <div class="p-access__wrapper">
+
+            <!-- Location -->
+            <div class="p-location">
+              <div class="p-location__details">
+                <p class="p-location__company">会社名: (株)只野練習</h2>
+                <p class="p-location__address">住所: 〒123-4567 東京都渋谷区1-2-3</p>
+                <p class="p-location__tel">TEL: 012-3456-7890</p>
+                <p class="p-location__fax">FAX: 012-3456-7890</p>
+              </div>
+            </div>
+
+            <!-- Map -->
+            <div class="p-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.332715561574!2d139.70022341525924!3d35.65858148019876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6e9c6c9e87610e19!2z44Kz44Oz44Kw44Ki44Kj44K_44Kn44O844Kz44Ov44O844Kr44K_44Kw44Oz44K344Ov44Kj44Oz44Kx44Oz44Kv!5e0!3m2!1sja!2sjp!4v1610733733389!5m2!1sja!2sjp"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                class="p-map__iframe"></iframe>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- Access Section Ends -->
+
+  <!-- Contact Section Starts -->
+  <section id="contact" class="p-contact">
+
+    <div class="u-container p-contact__container">
+
+      <div class="c-title p-contact__title">
+        <h2 class="c-title__main p-contact__title-main">Contact Us</h2>
+        <h3 class="c-title__sub p-contact__title-sub">お問い合わせ</h3>
+      </div>
+
+      <!-- Form -->
+      <form method="post" class="c-form p-contact__form">
+
+        <label for="name" class="p-contact__label">お名前</label>
+        <input type="text" name="name" id="name" class="p-contact__input" required>
+        <label for="email" class="p-contact__label">メールアドレス</label>
+        <input type="email" name="email" id="email" class="p-contact__input" required>
+        <label for="message" class="p-contact__label">お問い合わせ内容</label>
+        <textarea name="message" id="message" class="p-contact__textarea" required></textarea>
+        <div class="p-contact__btn-wrapper">
+          <button type="submit" class="c-btn p-contact__btn">送信する</button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </section>
+  <!-- Contact Section Ends -->
+
+  <!-- Footer Section Starts -->
+  <footer class="l-footer">
+
+    <div class="p-footer">
+      <small class="p-footer__title">
+        &copy; 2023 <a href="index.html" class="p-footer__link">(株)只野練習</a> All Rights Reserved.
+      </small>
+    </div>
+
+  </footer>
+  <!-- Footer Section Ends -->
+
+  <!-- Java Script -->
+  <script src="assets/js/jquery-3.6.3.min.js"></script>
+  <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

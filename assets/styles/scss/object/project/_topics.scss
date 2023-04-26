@@ -1,0 +1,43 @@
+/**
+ * Topics
+ */
+
+.p-topics {
+  &__title-main {
+    @include font_title;
+    color: $color_main;
+    font-size: $font-size_xl;
+  }
+  &__title-sub {
+    font-size: $font-size_md;
+  }
+  &__list-wrapper {
+    max-width: 60%;
+    height: 100px;
+    @include mx_auto(30px);
+    padding: $space_md $space_lg;
+    background-color: $color_secondary;
+    border-radius: $border-radius_base;
+    overflow-y: scroll;
+    box-shadow: $box-shadow_base;
+    @include breakpoint() {
+      max-width: 70%;
+    }
+    @include breakpoint("md") {
+      max-width: 90%;
+    }
+  }
+  &__item {
+    @include flex(center, flex-start);
+    margin: $space_sm 0;
+  }
+  &__date {
+    margin-right: $space_lg;
+    color: $color_main;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  &__info {
+    font-size: $font-size_sm;
+  }
+}

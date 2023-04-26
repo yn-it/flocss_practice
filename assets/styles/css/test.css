@@ -1,0 +1,42 @@
+.p-business-content__card-image-wrapper {
+  width: 100%;
+}
+.p-business-content__card-image-wrapper--narrow {
+  height: 180px;
+}
+@media (max-width: 992px) {
+  .p-business-content__card-image-wrapper--narrow {
+    height: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .p-business-content__card-image-wrapper--narrow {
+    height: 240px;
+  }
+}
+@media (max-width: 480px) {
+  .p-business-content__card-image-wrapper--narrow {
+    height: 300px;
+  }
+}
+.p-business-content__card-image-wrapper--base {
+  height: 200px;
+}
+@media (max-width: 992px) {
+  .p-business-content__card-image-wrapper--base {
+    height: 240px;
+  }
+}
+@media (max-width: 768px) {
+  .p-business-content__card-image-wrapper--base {
+    height: 300px;
+  }
+}
+.p-business-content__card-image-wrapper--wide {
+  height: 240px;
+}
+@media (max-width: 768px) {
+  .p-business-content__card-image-wrapper--wide {
+    height: 300px;
+  }
+}

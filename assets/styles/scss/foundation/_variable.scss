@@ -1,0 +1,128 @@
+/**
+ * Variables
+ */
+
+// Spacing
+$space_sm: 5px;
+$space_md: 10px;
+$space_lg: 15px;
+$space_xl: 20px;
+$space_xxl: 30px;
+
+// Letter Spacing
+$letter-spacing_base: 0.1em;
+
+// Colors
+$color_main: #2bab0d;
+$color_secondary: #f8f7fc;
+$color_text: #333;
+$color_white: #fff;
+$color_hover: #228b22;
+
+// Font Size
+$font-size_sm: 14px;
+$font-size_md: 18px;
+$font-size_xl: 38px;
+
+// Font Family
+$font-family_base: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+$font-family_alphabet: "Roboto", sans-serif;
+
+// Border
+$border_base: 1px solid $color_text;
+
+// Border Radius
+$border-radius_base: 6px;
+$border-radius_large: 25px;
+
+// Box Shadow
+$box-shadow_base: 0 3px 6px rgba(0, 0, 0, 0.1);
+$box-shadow_container: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+// Line Height
+$line-height_base: 1.6;
+
+// Clip Path
+@mixin clip-path-transition($active: false) {
+   $default_clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   $active_clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+   -webkit-clip-path: $default_clip-path;
+   clip-path: $default_clip-path;
+
+   @if $active {
+      -webkit-clip-path: $active_clip-path;
+      clip-path: $active_clip-path;
+   }
+
+   @include transition(all, 0.3s, ease-in-out);
+}
+
+// Breakpoints
+$breakpoints: (
+   'sm': 480px,
+   'md': 768px,
+   'lg': 992px,
+   'xl': 1140px,
+);
+@mixin breakpoint($breakpoint: 'xl') {
+   @media (max-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+   }
+}
+
+// Text Align
+@mixin text_center {
+   text-align: center;
+}
+
+// Text Nowrap
+@mixin text_nowrap {
+   white-space: nowrap;
+   overflow: hidden;
+}
+
+// Margin Auto
+@mixin mx_auto($x: 0) {
+   margin: $x auto;
+}
+
+// Flexbox
+@mixin flex($align: null, $justify: null, $wrap: null, $direction: null) {
+   display: flex;
+   align-items: $align;
+   justify-content: $justify;
+   flex-wrap: $wrap;
+   flex-direction: $direction;
+}
+
+// Center Absolute
+@mixin center_absolute {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+// Transition
+@mixin transition($property: null, $duration: null, $timing_function: null) {
+   transition: $property $duration $timing_function;
+}
+
+// Card Image Height
+$card_image_heights: (
+   'narrow': 180px,
+   'base': 200px,
+   'wide': 240px,
+   'max': 300px,
+);
+
+@mixin card_image_height($card_image_height: 'base') {
+   height: #{map-get($card_image_heights, $card_image_height)};
+}
+
+// Font Title
+@mixin font_title {
+   font-family: $font-family_alphabet;
+   font-weight: 500;
+}

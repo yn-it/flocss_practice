@@ -1,0 +1,8 @@
+/**
+ * Form
+ */
+
+.c-form {
+  @include flex(center, null, null, column);
+  @include mx_auto($space_xxl);
+}

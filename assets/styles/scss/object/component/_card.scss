@@ -1,0 +1,37 @@
+/**
+ * Card
+ */
+
+ .c-card {
+  margin: $space_lg;
+  &--narrow {
+    flex-basis: calc(100% / 4 - 30px);
+    @include breakpoint('lg') {
+      flex-basis: calc(100% / 3 - 30px);
+    }
+    @include breakpoint('md') {
+      flex-basis: calc(100% / 2 - 30px);
+    }
+    @include breakpoint('sm') {
+      flex-basis: 100%;
+    }
+  }
+  &--base {
+    flex-basis: calc(100% / 3 - 30px);
+    @include breakpoint('lg') {
+      flex-basis: calc(100% / 2 - 30px);
+    }
+    @include breakpoint('md') {
+      flex-basis: 100%;
+    }
+  }
+  &--wide {
+    flex-basis: calc(100% / 2 - 30px);
+    @include breakpoint('lg') {
+      flex-basis: 100%;
+    }
+  }
+  &__title {
+    @include text_center;
+  }
+ }

@@ -1,0 +1,11 @@
+/**
+ * Button
+ */
+
+.c-btn {
+  display: inline-block;
+  @include text_center;
+  color: $color_white;
+  border-radius: $border-radius_base;
+  border: none;
+}

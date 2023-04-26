@@ -1,0 +1,36 @@
+/**
+ * Navigation
+ */
+
+.c-nav {
+  &__list {
+    @include flex(center, space-between);
+    @include breakpoint() {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+  &__item {
+    margin-right: $space_md;
+    @include text_center;
+    &:last-child {
+      margin-right: 0;
+    }
+    @include breakpoint() {
+      margin-right: 0;
+      text-align: left;
+    }
+  }
+  &__link {
+    display: block;
+    padding: $space_md;
+    font-weight: bold;
+    border-radius: $border-radius_large;
+  }
+  &__btn {
+    display: none;
+    @include breakpoint() {
+      display: inline-block;
+    }
+  }
+}

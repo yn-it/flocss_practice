@@ -1,0 +1,12 @@
+/* Utility
+   ----------------------------------------------------------------- */
+
+/**
+ * Container
+ */
+
+.u-container {
+  max-width: 1200px;
+  @include mx_auto();
+  padding: $space_lg;
+}

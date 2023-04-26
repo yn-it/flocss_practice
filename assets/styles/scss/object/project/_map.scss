@@ -1,0 +1,15 @@
+/**
+ * Map
+ */
+
+.p-map {
+  width: 100%;
+  height: 300px;
+  @include breakpoint('md') {
+    margin-bottom: $space_xl;
+  }
+  &__iframe {
+    width: 100%;
+    height: 100%;
+  }
+}

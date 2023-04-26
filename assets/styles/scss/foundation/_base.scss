@@ -1,0 +1,20 @@
+/**
+ * Base
+ */
+
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 60px;
+}
+
+body {
+  font-family: $font-family_base;
+  color: $color_text;
+}
+section {
+  padding: 50px 0;
+}

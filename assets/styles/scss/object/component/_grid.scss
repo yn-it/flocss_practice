@@ -1,0 +1,13 @@
+/**
+ * Grid
+ */
+
+.c-grid {
+  @include flex(null, space-between, wrap, row);
+  margin: -$space_lg;
+  &--2col, &--3col {
+    @include breakpoint("md") {
+      flex-direction: column;
+    }
+  }
+}

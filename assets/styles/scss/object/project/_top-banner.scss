@@ -1,0 +1,25 @@
+/**
+ * Top Banner
+ */
+
+.p-top-banner {
+  max-width: 100%;
+  min-height: 100vh;
+  padding-top: 74px;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 255, 238, 0.5), rgba(0,255,238,0.5)), url("../../images/top_banner.jpg");
+  background-position: 0 30%;
+  background-attachment: fixed;
+  z-index: 1;
+  &__caption {
+    @include center_absolute;
+    color: $color_white;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: $letter-spacing_base;
+    @include text_nowrap;
+    @include breakpoint("md") {
+      font-size: 30px;
+    }
+  }
+}

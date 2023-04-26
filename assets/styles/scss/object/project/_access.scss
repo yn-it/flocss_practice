@@ -1,0 +1,37 @@
+/* Project
+   ----------------------------------------------------------------- */
+
+/**
+ * Access
+ */
+
+.p-access {
+  background-color: $color_secondary;
+  box-shadow: $box-shadow_container;
+  &__title-main {
+    @include font_title;
+    color: $color_main;
+    font-size: $font-size_xl;
+  }
+  &__title-sub {
+    font-size: $font-size_md;
+  }
+  &__row {
+    padding: $space_md 0;
+  }
+  &__col {
+    margin: 0;
+  }
+  &__wrapper {
+    width: 80%;
+    max-width: 100%;
+    @include mx_auto();
+    @include flex(flex-start, space-between, null, row);
+    @include breakpoint('lg') {
+      width: 90%;
+    }
+    @include breakpoint('md') {
+      flex-direction: column;
+    }
+  }
+}

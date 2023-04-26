@@ -1,0 +1,26 @@
+/**
+ * Header
+ */
+
+.p-location {
+  width: 100%;
+  @include breakpoint('md') {
+    margin-bottom: $space_xl;
+  }
+  &__details {
+    margin-right: $space_lg;
+    @include breakpoint('md') {
+      margin-right: 0;
+     @include text_center;
+    }
+  }
+  &__company {
+    padding: $space_md 0;
+    margin: $space_md 0;
+    font-size: 24px;
+  }
+  &__address, &__tel, &__fax {
+    margin: $space_sm 0;
+    font-size: $font-size_sm;
+  }
+}

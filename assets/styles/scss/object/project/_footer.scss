@@ -1,0 +1,17 @@
+/**
+ * Footer
+ */
+
+.p-footer {
+  @include flex(center, center, null, null);
+  padding: $space_lg;
+  background: $color_secondary;
+  &__title {
+    margin: 0;
+    font-weight: bold;
+  }
+  &__link {
+    color: $color_text;
+    text-decoration: underline;
+  }
+}

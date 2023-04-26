@@ -1,0 +1,70 @@
+/**
+ * Header
+ */
+
+.p-header {
+  background-color: $color_white;
+  box-shadow: $box-shadow_base;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  &__container {
+    @include flex(center, space-between);
+  }
+  &__logo-title {
+    color: $color_text;
+  }
+  &__logo-image {
+    width: 40px;
+    height: auto;
+  }
+  &__nav {
+    @include breakpoint() {
+      width: 100%;
+      padding: $space_xl;
+      position: absolute;
+      top: 99%;
+      left: 0;
+      background: $color_white;
+      @include clip-path-transition();
+    }
+    &.is-active {
+      @include breakpoint() {
+        @include clip-path-transition("active");
+      }
+    }
+  }
+  &__nav-item {
+    width: 150px;
+    @include breakpoint() {
+      width: 100%;
+    }
+  }
+  &__nav-link {
+    color: $color_text;
+    @include transition(background-color 0.3s ease-in-out);
+    &:hover {
+      background-color: $color_main;
+      color: $color_white;
+      @include breakpoint() {
+        background-color: initial;
+        color: $color_main;
+        text-decoration: underline;
+      }
+    }
+  }
+  &__nav-btn {
+    @include breakpoint() {
+      cursor: pointer;
+      font-size: 26px;
+      @include transition(all, 0.3s, ease-in-out);
+    }
+    &.is-active {
+      @include breakpoint() {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

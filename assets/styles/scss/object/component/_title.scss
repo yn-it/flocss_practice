@@ -1,0 +1,16 @@
+/**
+ * Title
+ */
+
+.c-title {
+  @include text_center;
+  padding: $space_sm 0;
+  margin: $space_md 0 $space_xxl;
+  &__main {
+    padding: $space_sm 0;
+    margin: $space_sm 0;
+  }
+  &__sub {
+    margin: $space_sm 0;
+  }
+}

@@ -1,0 +1,16 @@
+/**
+ * Logo
+ */
+
+.c-logo {
+  @include flex(center);
+  &__image {
+    height: auto;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: $letter-spacing_base;
+  }
+}
